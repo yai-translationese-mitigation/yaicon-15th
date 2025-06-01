@@ -9,7 +9,7 @@ This work was presented at the 15th YAICON and won the 1st Prize!
 | Min Gyu Kim (김민규)       | M.Sc. Statistics & Data Science             | Related Work, Final Presentation             |
 | Kyeong Won Park (박경원)   | M.Sc. Artificial Intelligence               | mT5-small / mT5-base Model                |
 | Hyun Bo Sim (심현보)       | B.Sc. Electrical & Electronic Engineering   | Dataset                 |
-| Yumin Jeong (정유민)       | M.D. Candidate                              | Dataset, Evaluation Metrics                  |
+| Yumin Cheong (정유민)      | M.D. Candidate                              | Dataset, Evaluation Metrics                  |
 
 ## 📌 Background
 
