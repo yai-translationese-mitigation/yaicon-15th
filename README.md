@@ -13,15 +13,11 @@ This work was presented at the 15th YAICON and won the 1st Prize 🏆
 
 ## 📌 Background
 
-Although recent advancements in large language models (LLMs) have significantly improved machine translation quality, translationese remains a persistent issue.  
-Translationese refers to unnatural linguistic patterns that arise from the direct transfer of source-language structures or expressions into the target language.  
-In English-to-Korean translation, this often results in awkward word order, overuse of pronouns (e.g., “그”, “그녀”), or overly formal constructions such as “~에 대하여”.
+Although recent advancements in large language models (LLMs) have significantly improved machine translation quality, translationese remains a persistent issue. Translationese refers to unnatural linguistic patterns that arise from the direct transfer of source-language structures or expressions into the target language. In English-to-Korean translation, this often results in awkward word order, overuse of pronouns (e.g., “그”, “그녀”), or overly formal constructions such as “~에 대하여”.
 
-These artifacts not only reduce the readability and fluency of the translated text but also compromise the reliability of machine translation evaluation.  
-For instance, Artetxe et al. (2020a) demonstrated that test sets containing translationese can lead to overly optimistic performance scores, thus misrepresenting the true effectiveness of cross-lingual models.
+These artifacts not only reduce the readability and fluency of the translated text but also compromise the reliability of machine translation evaluation. For instance, Artetxe et al. (2020a) demonstrated that test sets containing translationese can lead to overly optimistic performance scores, thus misrepresenting the true effectiveness of cross-lingual models.
 
-In this context, mitigating translationese in English–Korean translations presents both a linguistic and technical challenge.  
-The goal of our project is to design and implement a method to detect and reduce translationese using fine-tuned encoder–decoder models.
+In this context, mitigating translationese in English–Korean translations presents both a linguistic and technical challenge. Hence, the goal of our project is to design and implement a method to detect and reduce translationese using fine-tuned encoder–decoder models.
 
 
 ## 🎯 Objectives
