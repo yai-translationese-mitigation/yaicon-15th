@@ -1,8 +1,6 @@
 # YAICON 15th Korean-English Translationese Mitigation (Team Name: 그것팀되다)
 This work was presented at the 15th YAICON and won the 1st Prize 🏆
 
----
-
 ## 👥 Team Members
 
 | Name                | Degree & Major                                   | Role                                         |
@@ -25,13 +23,11 @@ For instance, Artetxe et al. (2020a) demonstrated that test sets containing tran
 In this context, mitigating translationese in English–Korean translations presents both a linguistic and technical challenge.  
 The goal of our project is to design and implement a method to detect and reduce translationese using fine-tuned encoder–decoder models.
 
----
 
 ## 🎯 Objectives
 
 We aim to build a style transfer model that rewrites translationese Korean sentences into more natural Korean while preserving their original meaning.
 
----
 
 ## 📊 Dataset
 
@@ -51,7 +47,6 @@ Each row in the CSV file includes:
 - `ko_translationese`: Korean sentences generated via back-translation from English
 - `ko`: Comparable native Korean sentences
 
----
 
 ## 🧠 Model and Training
 
@@ -62,7 +57,6 @@ We fine-tuned the following pretrained encoder–decoder models:
 
 Each model was trained using standard cross-entropy loss on the filtered pseudo-parallel dataset.
 
----
 
 ## 📈 Evaluation
 
@@ -95,7 +89,6 @@ To assess the effectiveness of translationese mitigation, we employed both quant
   - **KE-T5-base** generated the most fluent and natural Korean expressions, although it occasionally distorted meaning (e.g., incorrect pronoun references or changes in subject).
   - **mT5 models** produced more literal translations with fewer semantic deviations, but retained some of the rigid and unnatural expressions typical of translationese.
 
----
 
 ## ⚠️ Limitations
 
@@ -103,21 +96,17 @@ To assess the effectiveness of translationese mitigation, we employed both quant
 - **Model accuracy**: KE-T5 sometimes sacrificed meaning accuracy for fluency.
 - **CE Loss limitation**: Cross-entropy loss alone may not sufficiently penalize stylistic artifacts.
 
----
 
 ## 🔮 Future Directions
 
 - Explore **data augmentation** techniques to enrich stylistic diversity
 - Introduce **additional losses** (e.g., classifier-guided loss, reconstruction loss, cycle loss) to improve style control
 
----
 
 ## 🙋 Acknowledgements
 
 This project was presented at the 15th YAICON, a research contest held every semester by [YAI](https://y-ai.notion.site/), the AI academic society of Yonsei University.  
 We thank all members of YAI for their valuable feedback and support.
-
----
 
 ## 📄 License
 
