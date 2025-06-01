@@ -7,8 +7,8 @@ This work was presented at the 15th YAICON and won the 1st Prize!
 |---------------------|--------------------------------------------------|----------------------------------------------|
 | Hyun Gu Kang (강현구)     | B.A. German Language & Literature / B.Sc. Applied Statistics | Team Lead, KE-T5 Model, Preliminary Presentation |
 | Min Gyu Kim (김민규)       | M.Sc. Statistics & Data Science             | Related Work, Final Presentation             |
-| Kyeong Won Park (박경원)   | M.Sc. Artificial Intelligence               | mT5-small / mT5-base Modeling                |
-| Hyun Bo Sim (심현보)       | B.Sc. Electrical & Electronic Engineering   | Dataset Collection & Curation                |
+| Kyeong Won Park (박경원)   | M.Sc. Artificial Intelligence               | mT5-small / mT5-base Model                |
+| Hyun Bo Sim (심현보)       | B.Sc. Electrical & Electronic Engineering   | Dataset                 |
 | Yumin Jeong (정유민)       | M.D. Candidate                              | Dataset, Evaluation Metrics                  |
 
 ## 📌 Background
