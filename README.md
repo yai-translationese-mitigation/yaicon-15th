@@ -1,5 +1,5 @@
 # YAICON 15th Korean-English Translationese Mitigation (Team Name: 그것팀되다)
-This work was presented at the 15th YAICON and won the 1st Prize 🏆
+This work was presented at the 15th YAICON.
 
 ## 👥 Team Members
 
@@ -97,7 +97,6 @@ To assess the effectiveness of translationese mitigation, we employed both quant
 
 - Explore **data augmentation** techniques to enrich stylistic diversity
 - Introduce **additional losses** (e.g., classifier-guided loss, reconstruction loss, cycle loss) to improve style control
-
 
 ## 🙋 Acknowledgements
 
