@@ -1,5 +1,5 @@
 # YAICON 15th Korean-English Translationese Mitigation (Team Name: 그것팀되다)
-This work was presented at the 15th YAICON.
+This work was presented at the 15th YAICON and won the 1st prize 🥇
 
 ## 👥 Team Members
 
