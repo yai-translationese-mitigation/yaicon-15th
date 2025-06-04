@@ -7,9 +7,9 @@ This work was presented at the 15th YAICON.
 |---------------------|--------------------------------------------------|----------------------------------------------|
 | Hyun Gu Kang (강현구)     | B.A. German Language & Literature / B.Sc. Applied Statistics | Team Lead, KE-T5 Model, Preliminary Presentation |
 | Min Gyu Kim (김민규)       | M.Sc. Statistics & Data Science             | Related Work, Final Presentation             |
-| Kyeong Won Park (박경원)   | M.Sc. Artificial Intelligence               | mT5-small / mT5-base Model                |
-| Hyun Bo Sim (심현보)       | B.Sc. Electrical & Electronic Engineering   | Dataset                 |
-| Yumin Cheong (정유민)      | M.D. Candidate                              | Dataset, Evaluation Metrics                  |
+| Kyung Won Park (박경원)  | M.Sc. Artificial Intelligence               |  Modeling (mT5-small / mT5-base / KoBART-base)               |
+| Hyun Bo Sim (심현보)       | B.Sc. Electrical & Electronic Engineering   | Data Preparation                |
+| Yumin Cheong (정유민)      | M.D. Candidate                              | Data Preparation, Evaluation Metrics                  |
 
 ## 📌 Background
 
@@ -50,8 +50,9 @@ We fine-tuned the following pretrained encoder–decoder models:
 
 - [`KE-T5-base`](https://huggingface.co/KETI-AIR/ke-t5-base) – Korean-specific model
 - [`mT5-small`](https://huggingface.co/google/mt5-small) and [`mT5-base`](https://huggingface.co/google/mt5-base) – multilingual T5 variants
-
+- [`koBART-base-v2`](https://huggingface.co/gogamza/kobart-base-v2) – Korean-specific BART-based Seq2Seq model 
 Each model was trained using standard cross-entropy loss on the filtered pseudo-parallel dataset.
+
 
 
 ## 📈 Evaluation
@@ -65,12 +66,14 @@ To assess the effectiveness of translationese mitigation, we employed both quant
   - mT5-small: 0.75  
   - mT5-base: 0.83  
   - KE-T5-base: 0.81
+  - koBART-base-v2: 0.86
 
 - **Perplexity** (fluency of generated text):  
   Lower perplexity indicates more natural language.  
   - KE-T5-base: **1.36**  
   - mT5-small: 12.84  
   - mT5-base: 9.56
+  - koBART-base-v2: 8.83
 
 - **MATTR** (Moving Average Type-Token Ratio, measures lexical diversity):  
   All models showed slightly improved lexical variety.  
@@ -78,19 +81,26 @@ To assess the effectiveness of translationese mitigation, we employed both quant
   - mT5-small: 0.9966  
   - mT5-base: 0.9960  
   - KE-T5-base: 0.9977
+  - koBART-base-v2: 0.9932
 
 ### 👀 Qualitative Analysis
 
 - **Human Evaluation**:  
   - **KE-T5-base** generated the most fluent and natural Korean expressions, although it occasionally distorted meaning (e.g., incorrect pronoun references or changes in subject).
   - **mT5 models** produced more literal translations with fewer semantic deviations, but retained some of the rigid and unnatural expressions typical of translationese.
+  - **KoBART-base-v2** struck a balance between fluency and fidelity: its outputs felt more natural than mT5’s, without the occasional over‐formal tone of KE-T5, and it preserved nuance better than the others, though minor context omissions sometimes occurred.
+
 
 
 ## ⚠️ Limitations
 
 - **Data quality**: Even original AI-Hub translations often contained translationese, making clean ground truth difficult to obtain.
-- **Model accuracy**: KE-T5 sometimes sacrificed meaning accuracy for fluency.
+- **Model accuracy**:
+   - KE-T5-base sometimes sacrificed semantic accuracy for fluency.
+   - mT5-small/base tended to preserve semantic fidelity but produced more rigid, literal phrasing.
+   - KoBART-base-v2 struck a balance by maintaining meaning fairly accurately without being as overly formal as KE-T5 and generating more natural expressions than mT5, though it occasionally omitted some contextual elements.
 - **CE Loss limitation**: Cross-entropy loss alone may not sufficiently penalize stylistic artifacts.
+
 
 
 ## 🔮 Future Directions
